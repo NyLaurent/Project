@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Protest+Strike&family=Rubik+Burned&family=Single+Day&family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  list-style: none;
+
+  font-family: "Oswald", sans-serif;
+  font-family: "Protest Strike", sans-serif;
+  font-family: "Rubik Burned", system-ui;
+  font-family: "Single Day", cursive;
+  font-family: "Ubuntu", sans-serif;
+}
+:root {
+  --first-color: rgb(158, 62, 129);
+  --bg-color: rgb(247, 240, 240);
+  --white: #fff;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: rgb(255, 143, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+  background: linear-gradient(var(--first-color), var(--bg-color));
+  transform: translate(-490px, -150px);
+}
+.container::after {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+  background: linear-gradient(var(--first-color), var(--first-color));
+  transform: translate(490px, 170px);
+}
+.container .ball-1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--first-color);
+  transform: translate(-250px, 200px);
+  position: absolute;
+}
+.container .ball-2 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: var(--first-color);
+  transform: translate(-10px, -220px);
+  position: absolute;
+}
+.container .ball-3 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: var(--first-color);
+  transform: translate(150px, 250px);
+  position: absolute;
+}
+.container .box {
+  height: 86vh;
+  width: 75%;
+  padding: 0, 20px;
+  background: rgb(158, 62, 129, 0.5);
+
+  z-index: 10;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(25px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.27);
+}
+.container .box nav {
+  height: 7%;
+  width: 95%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+  padding: 20px;
+}
+.container .box nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.container .box nav ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .box nav ul li a:hover {
+  color: var(--ano);
+}
+
+.container .box nav .logo {
+  font-size: 40px;
+  color: var(--white);
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.container .box .contains {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  position: relative;
+  margin-top: 8%;
+  padding-left: 80px;
+}
+
+.container .box .contains .saction-1 {
+  position: absolute;
+  margin-top: 130px;
+}
+
+.container .box .contains .saction-1 h1 {
+  font-size: 75px;
+}
+
+.container .box .contains .saction-1 h3 {
+  font-size: 36px;
+}
+
+.container .box .contains .saction-1 .button {
+  margin-top: 50px;
+}
+
+.container .box .contains .saction-1 .button a {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container .box .contains .saction-1 .button a:hover {
+  background: #fff;
+  color: var(--first-color);
+}
+
+.container .box .contains .saction-2 img {
+  width: 600px;
+
+  height: 500px;
+  transform: translateX(380px);
+}
+span {
+  color: #f15;
+  font-size: 40px;
+}

@@ -163,3 +163,20 @@ body {
     transform: rotate(90deg) scale(6);
   }
 }
+
+.return {
+  position: absolute;
+  left: 170px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid var(--first-color);
+}
+.return a {
+  text-decoration: none;
+}
+.return a:hover {
+  color: #fff;
+}
+.return:hover {
+  background: var(--first-color);
+}
